@@ -45,7 +45,7 @@ body {
 }
 
 .navbar__item--active {
-  border: 1px solid grey;
+  border: 1px solid ccc;
   border-radius: 0.25rem;
 }
 
@@ -63,4 +63,15 @@ body {
   .navbar__list {
     display: flex;
   }
+}
+
+/* FOOTER STYLES */
+.footer {
+  display: flex;
+  border-top: 1px solid #ccc;
+  justify-content: center;
+}
+
+.footer__text {
+  font-weight: bolder;
 }
