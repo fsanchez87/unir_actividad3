@@ -45,7 +45,7 @@ body {
 }
 
 .navbar__item--active {
-  border: 1px solid ccc;
+  border: 1px solid #ccc;
   border-radius: 0.25rem;
 }
 
@@ -74,4 +74,13 @@ body {
 
 .footer__text {
   font-weight: bolder;
+}
+
+/* MAIN STYLES */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 24px;
 }
