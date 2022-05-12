@@ -80,9 +80,7 @@ body {
 .main {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 24px;
+  padding: 24px 16px;
 }
 
 /* MAIN ARTICLE STYLES */
@@ -90,9 +88,14 @@ body {
   display: block;
 }
 
-.main-article__img {
+.main-article__img-container {
+  display: flex;
   flex-basis: 40%;
-  width: 100%;
+  margin-right: 16px;
+}
+
+.main-article__img {
+  max-width: 100%;
   height: auto;
   position: relative;
 }
@@ -148,10 +151,13 @@ body {
   padding: 0;
   list-style: none;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .main-article__item {
   display: flex;
+  width: 47%;
 }
 
 .main-article__icon {
@@ -163,5 +169,13 @@ body {
 @media (min-width: 768px) {
   .main-article {
     display: flex;
+  }
+
+  .main-article__list {
+    flex-wrap: nowrap;
+  }
+
+  .main-article__img {
+    margin-right: 16px;
   }
 }
