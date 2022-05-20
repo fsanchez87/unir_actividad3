@@ -8,7 +8,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 450;
   line-height: 1.5;
   color: #212529;
@@ -186,7 +186,8 @@ body {
 
 .recommended__title {
   font-size: 1.9rem;
-  line-height: 1.8rem;}
+  line-height: 1.8rem;
+}
 
 .recommended__container {
   display: block;
@@ -232,4 +233,73 @@ body {
   .recommended__container {
     display: flex;
   }
+}
+
+/* SORTEO STYLES */
+.raffle {
+  background-color: #eff6ff;
+  padding: 0.95rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .raffle {
+    display: flex;
+    padding: 3.25rem;
+    gap: 2rem;
+  }
+
+  .raffle__article {
+    width: 70%;
+    padding-right: 3rem;
+  }
+
+  .raffle__article {
+    padding-right: 3rem;
+  }
+
+  .raffle__form {
+    width: 30%;
+  }
+}
+
+.raffle__title {
+  font-size: 2.6rem;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  line-height: 3.3rem;
+}
+.raffle__text {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.raffle__label {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.raffle__input {
+  display: block;
+  width: 100%;
+  padding: 0.975rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 7px;
+  margin-bottom: 1.1rem;
+}
+.raffle__btn {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid blue;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 0.25rem;
 }
