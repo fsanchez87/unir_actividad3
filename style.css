@@ -17,13 +17,17 @@ body {
 }
 
 /* HEADER STYLES */
+.header {
+  border-bottom: 1px solid #ccc;
+}
+
 .navbar {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
-  padding-left: 5%;
   height: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px
 }
 
 .navbar__brand {
@@ -41,7 +45,12 @@ body {
 }
 
 .navbar__item {
-  padding: 0.375rem 0.75rem;
+  padding: 0.375rem 0.75rem;  
+}
+
+.navbar__item:hover {
+  background-color: #ccc;
+  border-radius: 0.25rem;
 }
 
 .navbar__item--active {
@@ -57,8 +66,6 @@ body {
 @media (min-width: 768px) {
   .navbar {
     display: flex;
-    padding-right: 10%;
-    padding-left: 10%;
   }
   .navbar__list {
     display: flex;
